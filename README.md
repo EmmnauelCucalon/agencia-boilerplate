@@ -1,43 +1,10 @@
-# Astro Starter Kit: Minimal
+# 🚀 Proyecto Agencia - [Nombre del Cliente]
+Plantilla base optimizada con Astro, Tailwind CSS, shadcn/ui y Sanity.
 
-```sh
-npm create astro@latest -- --template minimal
-```
+## 📋 Checklist de Configuración Inicial
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- [ ] **1. Base de Datos Aislada:** Entrar a [Sanity Manage](https://sanity.io/manage), crear un proyecto nuevo para el cliente y copiar el `projectId`.
+- [ ] **2. Conectar Código:** Reemplazar el `projectId` en el archivo `astro.config.mjs` y en la configuración de la carpeta `/studio`.
+- [ ] **3. Llenar SEO Genérico:** Levantar el servidor local (`npm run dev`), entrar al panel de Sanity y registrar el "Nombre del Sitio" y el "Logo" en los Ajustes Globales.
+- [ ] **4. Despliegue en Vercel:** Subir el repositorio clonado a GitHub e importarlo como un nuevo proyecto en Vercel.
+- [ ] **5. Webhook de Actualización:** Crear el gancho web en Vercel y pegarlo en la pestaña API del proyecto en Sanity para automatizar las publicaciones.
